@@ -5,6 +5,7 @@ import { NextFunction, Request, Response } from "express";
 import { PingController } from "./controllers/ping.controller";
 import { DemoController } from "./controllers/demo.controller";
 import { MongoDbConnetion } from "../config/mongo.config";
+import { HeavyController } from "./controllers/heavy.controller";
 
 
 
@@ -15,7 +16,7 @@ class App {
     constructor() {
         this.mongoDbConnetion = new MongoDbConnetion();
         this.mongoDbConnetion.initialize();
-        
+
         this.app = express();
         this.middleware();
         this.configureRoutes();
@@ -41,6 +42,7 @@ class App {
     private configureRoutes() {
         this.app.use("/ping", new PingController().router);
         this.app.use("/demo", new DemoController().router);
+        this.app.use("/heavy", new HeavyController().router);
     }
 }
 
