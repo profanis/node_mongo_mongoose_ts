@@ -41,3 +41,36 @@
 
 
 **Note:** The **_"knowledge of:"_** is very important as it points out the knowledge of each layer. This gives us an advantage of having a clear separation of concerns (SoC) which makes the code easier to extend, maintain.
+
+## Endpoints
+
+
+> GET /demo
+
+Get a list of demo items
+
+--- 
+
+> GET /demo/:id
+
+Get an item by id
+
+--- 
+
+> POST /demo
+
+Create a demo item
+
+--- 
+
+> PUT /demo/:id
+
+Update a demo item
+
+--- 
+
+> DELETE /demo/:id
+
+Delete a demo item
+
+--- 
