@@ -40,4 +40,4 @@
     _knowledge of: payloads, models_
 
 
-**Note:** The **_"knowledge of:"_** is very important as it has a clear separation of concern (SoC) which makes the code easier to extend, maintain.
+**Note:** The **_"knowledge of:"_** is very important as it points out the knowledge of each layer. This gives us an advantage of having a clear separation of concerns (SoC) which makes the code easier to extend, maintain.
